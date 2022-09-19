@@ -5,6 +5,7 @@ Note - this library might have bugs as I am new to programming, this is also hor
 To install the library in GCC move it to the following:
 
 libinput.a = D:\mingw64\lib\gcc\x86_64-w64-mingw32\8.1.0
+
 input.c and input.h = D:\mingw64\x86_64-w64-mingw32\include
 
 # Usage
