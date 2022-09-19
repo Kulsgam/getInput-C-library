@@ -43,6 +43,8 @@ Note - you should always use an & before when declaring a pointer, even if it is
        
                    // If the number of characters to scan in a string isn't defined, you cannot use arrays
                    
+                   // It will dynamically allocate until the separator is reached
+                   
                        // char* str = NULL; // CORRECT but NULL is needed
                        
                        // char str[5]; // WRONG
