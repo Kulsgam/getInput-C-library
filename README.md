@@ -9,24 +9,35 @@ input.c and input.h = D:\mingw64\x86_64-w64-mingw32\include
 
 # Usage
 `getinput("<format_string>", <pointers to variables>);`
+
 *format strings*
   s - for strings
   
   c - for characters
+  
   f - for floats
+  
   i - for integers and shorts
+  
   d - for doubles
+  
   l - for longs
+  
   L - for long longs
-The format string should be within "{}" and after the format string you can specify how many characters you should read
+  
+The format string should be within "{}" and after the format string you can specify how many characters you should read.
+
 After the '}' you can mention the character/string which reading to stop and move to the next pointer to scan, this is called the separator.
+
 Note - you should always use an & before when declaring a pointer, even if it is a string.
+
   eg - getInput("{s4} ", &str); // This will scan 4 characters and stop when encountering a " "(space)
        getInput("{s4}", &str); // This will scan until '\n' or '\r' or EOF(if no separator is specified)
        getInput("{s} {c}", &str, &c); // This will scan a string first and then a character, stopping at a " :
                    // If the number of characters to scan in a string isn't defined, you cannot use arrays
                        // char* str = NULL; // CORRECT but NULL is needed
                        // char str[5]; // WRONG
+                       
 You can also specify how many characters should be read for other datatypes than strings too!
   
 # Problems
