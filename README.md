@@ -9,7 +9,7 @@ input.c and input.h = D:\mingw64\x86_64-w64-mingw32\include
 
 # Usage
 `getinput("<format_string>", <pointers to variables>);`
-<format strings>
+*format strings*
   s - for strings
   c - for characters
   f - for floats
