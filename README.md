@@ -32,20 +32,30 @@ After the '}' you can mention the character/string which reading to stop and mov
 Note - you should always use an & before when declaring a pointer, even if it is a string.
 
   eg - getInput("{s4} ", &str); // This will scan 4 characters and stop when encountering a " "(space)
+  
        getInput("{s4}", &str); // This will scan until '\n' or '\r' or EOF(if no separator is specified)
+       
        getInput("{s} {c}", &str, &c); // This will scan a string first and then a character, stopping at a " :
+       
                    // If the number of characters to scan in a string isn't defined, you cannot use arrays
+                   
                        // char* str = NULL; // CORRECT but NULL is needed
+                       
                        // char str[5]; // WRONG
                        
 You can also specify how many characters should be read for other datatypes than strings too!
   
 # Problems
 This uses variadic arguments so if you get warnings, you can edit the `Input.c` file to have:
+
    #pragma GCC diagnostic push
+   
    #pragma GCC diagnostic ignored "-Wformat-security" 
+   
 at the beginning and:
+
    #pragma GCC diagnostic pop
+   
 at the end of the file.
   
 If you have library errors check this --> https://stackoverflow.com/questions/73766220/using-library-gives-unknown-reference-error
