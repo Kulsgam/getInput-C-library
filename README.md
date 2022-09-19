@@ -11,6 +11,7 @@ input.c and input.h = D:\mingw64\x86_64-w64-mingw32\include
 `getinput("<format_string>", <pointers to variables>);`
 *format strings*
   s - for strings
+  
   c - for characters
   f - for floats
   i - for integers and shorts
