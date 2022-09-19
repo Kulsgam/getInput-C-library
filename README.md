@@ -10,7 +10,8 @@ input.c and input.h = D:\mingw64\x86_64-w64-mingw32\include
 # Usage
 `getinput("<format_string>", <pointers to variables>);`
 
-*format strings*
+*format_strings*
+
   s - for strings
   
   c - for characters
@@ -31,8 +32,10 @@ After the '}' you can mention the character/string which reading to stop and mov
 
 Note - you should always use an & before when declaring a pointer, even if it is a string.
 
-  eg - getInput("{s4} ", &str); // This will scan 4 characters and stop when encountering a " "(space)
+  eg - 
   
+       getInput("{s4} ", &str); // This will scan 4 characters and stop when encountering a " "(space)
+       
        getInput("{s4}", &str); // This will scan until '\n' or '\r' or EOF(if no separator is specified)
        
        getInput("{s} {c}", &str, &c); // This will scan a string first and then a character, stopping at a " :
