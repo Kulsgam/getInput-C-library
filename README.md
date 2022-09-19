@@ -49,6 +49,9 @@ Note - you should always use an & before when declaring a pointer, even if it is
                        
                        // char str[5]; // WRONG
                        
+                   // Likewise if you specify the number of characters to read in a string, you have to have an array without the number of elements
+                      exceeding the character limit
+                       
 You can also specify how many characters should be read for other datatypes than strings too!
   
 # Problems
