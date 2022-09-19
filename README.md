@@ -61,4 +61,5 @@ at the beginning and:
    
 at the end of the file.
   
-If you have library errors check this --> https://stackoverflow.com/questions/73766220/using-library-gives-unknown-reference-error
+If you have library errors check this you can use `gcc -print-search-dirs` command to see the search directories GCC uses for libraries. You can also use
+`-L` for search directories when compiling or linking.
